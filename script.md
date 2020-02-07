@@ -42,7 +42,9 @@ function fetchExpenses() {
 fetchExpenses().then(console.log)
 ```
 
-Cool, we can see here when we call `utilities.fetchExpenses`, it returns an object that has that `json` function inside of it.
+Since the function throws occassionally, we'll need to trigger refreshes.
+refresh until it resolves correctly
+We can see here when we call `utilities.fetchExpenses`, it returns an object that has that `json` function inside of it.
 
 Now let's resolve that json function.
 
