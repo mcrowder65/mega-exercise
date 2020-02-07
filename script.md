@@ -8,16 +8,8 @@ Utilities is a file that contains three methods.
 
 fetchExpenses, fetchCategories, and fetchExpensesWithCategories.
 
-utilities.fetchExpenses returns a promise that is an object, and inside of that object there is function called json,
-and json also returns a promise, and inside of json is
-an array of objects that each contain id, amount, and location
-
-`utilities.fetchCategories` returns a promise that is an object, and inside of that object there is function called json,
-and json also returns a promise, and inside of json is
-an array of objects that each contain id, and category name.
-
-And lastly, there is a function called `utilities.fetchExpensesWithCategories`, it is a third party api that takes
-your expenses and categories, and looks through them and determines which expenses belong to which categories for you.
+All three of these functions return promises that are objects, and inside of those objects there is a function called json,
+which also returns a promise, and that resolves to an array.
 
 Something that is unfortunate about each of these three functions is that they all reject intermittently.
 
