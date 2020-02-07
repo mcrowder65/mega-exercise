@@ -44,6 +44,10 @@ fetchExpenses().then(console.log)
 
 Since the function throws occassionally, we'll need to trigger refreshes.
 refresh until it resolves correctly
+You can do this by typing rs in the terminal, make sure you have started a new session by clicking the plus on the top right
+and typing `yarn start`
+
+Then type `rs`, then enter until you get a happy value
 We can see here when we call `utilities.fetchExpenses`, it returns an object that has that `json` function inside of it.
 
 Now let's resolve that json function.
